@@ -1,0 +1,53 @@
+:root{
+    /* colors for the template */
+    --mr-primary-color: rgb(145,203,251);
+    --mr-secondary-color: rgb(66,148,186);
+    --mr-highlight-color: rgb(250,255,120);
+    --mr-dark-color:rgb(33,33,33);
+    --mr-light-color: rgb(222,238,251);
+    --mr-backgroundground-color: rgba(250,250,250,.8);
+    --mr-nav-toggler-glow: rgba(250,225,120,.5);
+
+}
+
+/*--------------- Styles for Sticky Footer Start ----------*/
+
+/*-- Makes sure the document is 100% tall. Takes up all the visible space --*/
+html, 
+body {
+    height: 100%;
+}
+
+/*-- making the body a flex box -----*/
+body {
+display: flex;
+flex-direction: column;
+}
+
+/*---Makes our flex box grow ---*/
+.content {
+    flex: 1 0 auto;
+    margin-top: 3.5rem;
+}
+
+/*--- shrink the footer as small as possible -----*/
+footer{
+    flex-shrink: 0;
+}
+
+/*--------- navBar overrides---------*/
+#mainNav{
+    background: var(--mr-dark-color);
+}
+#mainNav button{
+    border-color: var(--mr-highlight-color)
+}
+
+.navbar-toggler{
+    color: var(--mr-nav-toggler-glow) !important;
+}
+
+.navbar-toggler-icon-mr{
+    color: var(--mr-highlight-color);
+    font-size: 1.5rem;
+}
