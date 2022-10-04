@@ -1,53 +1,146 @@
-:root{
-    /* colors for the template */
-    --mr-primary-color: rgb(145,203,251);
-    --mr-secondary-color: rgb(66,148,186);
-    --mr-highlight-color: rgb(250,255,120);
-    --mr-dark-color:rgb(33,33,33);
-    --mr-light-color: rgb(222,238,251);
-    --mr-backgroundground-color: rgba(250,250,250,.8);
-    --mr-nav-toggler-glow: rgba(250,225,120,.5);
+:root {
+  /* colors for the template */
+  --mr-primary-color: rgb(145, 203, 251);
+  --mr-secondary-color: rgb(66, 148, 186);
+  --mr-highlight-color: rgb(250, 255, 120);
+  --mr-dark-color: rgb(33, 33, 33);
+  --mr-light-color: rgb(222, 238, 251);
+  --mr-backgroundground-color: rgba(250, 250, 250, 0.8);
+  --mr-nav-toggler-glow: rgba(250, 225, 120, 0.5);
+  /*----Fonts for the template-----*/
+  --mr-title-font: "Bebas Neue", Impact, Haettenschweiler, sans-serif;
+  --mr-subtitle-font: "Fira Sans", sans-serif;
+  --mr-body-font: "Roboto", sans-serif;
 
+  --mr--font-size: 1.2rem;
+  --mr--font-weight: 400;
 }
 
 /*--------------- Styles for Sticky Footer Start ----------*/
 
 /*-- Makes sure the document is 100% tall. Takes up all the visible space --*/
-html, 
+html,
 body {
-    height: 100%;
+  height: 100%;
 }
-
 /*-- making the body a flex box -----*/
 body {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--mr-body-font);
+  font-size: var(--mr--font-size);
+  font-weight: var(--mr--font-weight);
+  color: var(--mr-dark-color);
 }
-
 /*---Makes our flex box grow ---*/
 .content {
-    flex: 1 0 auto;
-    margin-top: 3.5rem;
+  flex: 1 0 auto;
+  /*-----offset navbar height-----*/
+  margin-top: 4.75rem;
 }
-
 /*--- shrink the footer as small as possible -----*/
-footer{
-    flex-shrink: 0;
+footer {
+  flex-shrink: 0;
 }
-
 /*--------- navBar overrides---------*/
-#mainNav{
-    background: var(--mr-dark-color);
-}
-#mainNav button{
-    border-color: var(--mr-highlight-color)
+#mainNav {
+  background: var(--mr-dark-color);
+  /*background: transparent;*/
 }
 
-.navbar-toggler{
-    color: var(--mr-nav-toggler-glow) !important;
+#mainNav {
+  background: var(--mr-dark-color);
+}
+#mainNav button {
+  border-color: var(--mr-highlight-color);
 }
 
-.navbar-toggler-icon-mr{
-    color: var(--mr-highlight-color);
-    font-size: 1.5rem;
+.navbar-toggler {
+  color: var(--mr-nav-toggler-glow) !important;
 }
+
+.navbar-toggler-icon-mr {
+  color: var(--mr-highlight-color);
+  font-size: 1.5rem;
+}
+/*----------navbar overrides end--------*/
+
+/*-----main header styles start-----*/
+.mainHeader {
+  background-image: url(/img/PortfolioImages/DevPortFolioBG_576.png);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--mr-light-color);
+}
+
+.mainHeader-content {
+}
+
+.mainTitle {
+  font-family: var(--mr-title-font);
+  font-size: 2.5rem;
+  color: var(--mr-dark-color);
+}
+
+.subTitle {
+    font-family: var(--mr-subtitle-font);
+    font-weight: 300;
+    color: var(--mr-dark-color)
+}
+
+.mainLogo {
+    font-size: .6em;
+}
+/*-----main header styles end-----*/
+
+/*-----Media Queries-----*/
+
+/* -----X-Small devices (portrait phones, less than 576px)-----*/
+/* -----No media query for `xs` since this is the default in Bootstrap-----*/
+
+/*-----Small devices (landscape phones, 576px and up)-----*/
+
+@media (min-width: 576px) {
+  .mainHeader {
+    background-image: url(/img/PortfolioImages/DevPortFolioBG_768.png);
+    height: 200px;
+  }
+}
+
+/*---Medium devices (tablets, 768px and up)---*/
+
+@media (min-width: 768px) {
+  .mainHeader {
+    background-image: url(/img/PortfolioImages/DevPortFolioBG_992.png);
+    height: 300px;
+  }
+}
+
+/*---Large devices (desktops, 992px and up)----*/
+
+@media (min-width: 992px) {
+  .mainHeader {
+    background-image: url(/img/PortfolioImages/DevPortFolioBG_1200.png);
+    height: 400px;
+  }
+}
+
+/*---X-Large devices (large desktops, 1200px and up)---*/
+
+@media (min-width: 1200px) {
+  .mainHeader {
+    background-image: url(/img/PortfolioImages/DevPortFolioBG_2560.png);
+    height: 500px;
+  }
+}
+
+/*-----XX-Large devices (larger desktops, 1400px and up)---*/
+
+@media (min-width: 1400px) {
+  .mainHeader {
+    background-image: url(/img/PortfolioImages/DevPortFolioBG_2560.png);
+    height: 600px;
+  }
+}
+/*-----End Queries-----*/
