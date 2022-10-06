@@ -26,6 +26,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
+    <!--favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/PortfolioImages/mrycelogo/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/PortfolioImages/mrycelogo/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/PortfolioImages/mrycelogo/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <!---Google Fonts-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,11 +59,11 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-white fixed-top" id="mainNav">
         <div class="container-xxl">
           <a class="navbar-brand" href="#">
             <img
-              src="/img/PortfolioImages/favicon_io/android-chrome-512x512.png"
+              src="/img/PortfolioImages/mrycelogo/android-chrome-512x512.png"
               height="50" />
           </a>
           <button
@@ -94,20 +111,20 @@
     </header>
     <!--Banner image and Call To Action-->
     <main class="content container-xxl">
-      <section class="mainHeader" id="header">
+      <section class="mainHeader section-page white" id="header">
         <div
           class="mainHeader-content d-flex align-items-center justify-content-start h-100">
           <div class="mainHeader-wrapper text-start">
+            <div class="mainTitle">Michael</div>
             <div class="mainTitle">
-              Michael<span
+              Ryce<span
                 ><img
-                  src="/img/PortfolioImages/favicon_io/android-chrome-512x512.png"
-                  class="mainLogo" />
-              </span>
+                  src="/img/PortfolioImages/mrycelogo/android-chrome-512x512.png"
+                  class="mainLogo"
+              /></span>
             </div>
-            <div class="mainTitle">Ryce</div>
             <div class="subTitle">SOFTWARE DEVELOPER</div>
-            <a class="btn btn-primary mt-3" href="#contact">CONTACT ME</a>
+            <a class="btn btn-primary contactme mt-3" href="#contact">CONTACT ME</a>
           </div>
         </div>
       </section>
@@ -133,7 +150,7 @@
             </picture>
           </div>
           <div class="col-12 col-lg-8 mt-2 mt-lg-0">
-            <h2>I'm Mike Ryce, A Full-Stack Web Developer</h2>
+            <h2> I'm Michael Ryce: A Full-Stack Web Developer</h2>
             <p>
               I am a software developer based in Dallas, TX. I have been
               building applications and websites for years. I have been
@@ -156,13 +173,13 @@
                 <span>Location: </span><span>Dallas, Tx</span>
               </div>
               <div class="col text-lg-end">
-                <a href="#" class="btn btn-primary">Download Resume</a>
+                <a href="#" class="btn btn-primary contactme">Download Resume</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section-page" id="skills">
+      <section class="section-page white" id="skills">
         <h2>What I Use</h2>
         <p>
           I am a creative problem solver with an engineering background. I build
@@ -264,7 +281,7 @@
           </div>
         </div>
       </section>
-      <section class="section-page" id="Challenges">
+      <section class="section-page white" id="Challenges">
         <h2>Smaller Projects</h2>
         <p>
           Showcasing complete functional projects demonstrates what I can bring
@@ -336,7 +353,7 @@
         id="cta">
         <i class="bi bi-arrow-right-square-fill ctaIcon pe-1"></i>
         <span class="p-3"
-          >Check out my latest project <a href="#">Insecticide</a>. A full
+          >Check out my latest project <a href="#">Insecticide</a> - A full
           featured bug tracker.</span
         >
         <i class="bi bi-arrow-left-square-fill ctaIcon pe-1"></i>
@@ -366,7 +383,7 @@
                   quos atque! Totam fugit voluptatum culpa eaque.
                 </p>
                 <div>
-                  <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                  <a href="#" class="btn btn-primary contactme btn-sm">Read More</a>
                 </div>
                 <p><small>Published 3 mins ago</small></p>
               </div>
@@ -395,7 +412,7 @@
                   quos atque! Totam fugit voluptatum culpa eaque.
                 </p>
                 <div>
-                  <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                  <a href="#" class="btn btn-primary contactme btn-sm">Read More</a>
                 </div>
                 <p><small>Published 3 mins ago</small></p>
               </div>
@@ -424,7 +441,7 @@
                   quos atque! Totam fugit voluptatum culpa eaque.
                 </p>
                 <div>
-                  <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                  <a href="#" class="btn btn-primary contactme btn-sm">Read More</a>
                 </div>
                 <p><small>Published 3 mins ago</small></p>
               </div>
@@ -453,7 +470,7 @@
                   quos atque! Totam fugit voluptatum culpa eaque.
                 </p>
                 <div>
-                  <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                  <a href="#" class="btn btn-primary contactme btn-sm">Read More</a>
                 </div>
                 <p><small>Published 3 mins ago</small></p>
               </div>
@@ -461,7 +478,7 @@
           </div>
         </article>
       </section>
-      <section class="section-page light">
+      <section class="section-page white">
         <h1 class="text-dark text-center mt-5">Let's Chat</h1>
         <div class="border border-1 border-dark shadow-lg bg-light p-3">
           <form name="portfolioContact" method="POST" data-netlify="true">
@@ -539,7 +556,7 @@
                 type="submit"
                 id="btnSubmit"
                 name="btnSubmit"
-                class="btn btn-primary btn-sm">
+                class="btn btn-primary contactme btn-sm">
                 Submit
               </button>
             </div>
@@ -566,7 +583,7 @@
           &copy; 2022 Built by Mike Ryce
         </div>
         <div class="col-12 col-md-4 text-center">
-          <img src="/img/PortfolioImages/dw_signature_white.png" height="50" />
+          <img src="/img/PortfolioImages/mrycelogo/android-chrome-512x512.png" height="50" />
         </div>
         <div
           class="col-12 col-md-4 text-center text-md-end oorder-first order-md-2">

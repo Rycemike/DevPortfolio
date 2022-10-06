@@ -1,8 +1,8 @@
 :root {
   /* colors for the template */
-  --mr-primary-color: rgb(145, 203, 251);
-  --mr-secondary-color: rgb(66, 148, 186);
-  --mr-highlight-color: rgb(250, 255, 120);
+  --mr-primary-color:#E9E6F3;
+  --mr-secondary-color: #B578D6;
+  --mr-highlight-color: #E3BE00;
   --mr-dark-color: rgb(33, 33, 33);
   --mr-light-color: rgb(222, 238, 251);
   --mr-background-color: rgba(250, 250, 250, 0.8);
@@ -68,14 +68,18 @@ footer {
   filter: brightness(1.1) !important;
   border-color: var(--mr-primary-color);
 }
+
+.btn-primary.contactme{
+    background: #373097 !important;
+}
 /*--------- navBar overrides---------*/
 #mainNav {
-  background: var(--mr-dark-color);
+  background: #E9E6F3;
   /*background: transparent;*/
 }
 
 #mainNav {
-  background: var(--mr-dark-color);
+  background: #E9E6F3;
 }
 
 #mainNav button {
@@ -125,7 +129,7 @@ footer {
 }
 
 .mainLogo {
-  height: 0.6em;
+  height: 1.2777em;
 }
 /*-----main header styles end-----*/
 
@@ -160,6 +164,10 @@ footer {
 
 .section-page.light {
   background-color: var(--mr-light-color) !important;
+}
+
+.section-page.white{
+    background-color: white !important;
 }
 .section-cta {
   background: var(--mr-dark-color);
