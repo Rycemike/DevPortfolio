@@ -5,7 +5,7 @@
   --mr-highlight-color: rgb(250, 255, 120);
   --mr-dark-color: rgb(33, 33, 33);
   --mr-light-color: rgb(222, 238, 251);
-  --mr-backgroundground-color: rgba(250, 250, 250, 0.8);
+  --mr-background-color: rgba(250, 250, 250, 0.8);
   --mr-nav-toggler-glow: rgba(250, 225, 120, 0.5);
   /*----Fonts for the template-----*/
   --mr-title-font: "Bebas Neue", Impact, Haettenschweiler, sans-serif;
@@ -188,7 +188,7 @@ footer {
 .footer-bg-cta {
   background: linear-gradient(
     to bottom,
-    var(--mr-background-color) 0,
+    var(--mr-background-color) 0%,
     var(--mr-background-color) 50%,
     var(--mr-dark-color) 50%,
     var(--mr-dark-color) 100%
@@ -202,35 +202,44 @@ footer {
   padding-bottom: 1rem;
 }
 
-.socialIcons{
-    font-size: 2rem;
-    color: var(--mr-secondary-color);
+.socialIcons {
+  font-size: 2rem;
+  color: var(--mr-secondary-color);
 }
 
-.socialIcons.youtube{
-    color: red;
+.socialIcons.youtube {
+  color: red;
 }
 
-.socialIcons.instagram{
-    background: #833ab4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.socialIcons.instagram {
+  background: #833ab4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.socialIcons.twitter{
-    color: mediumblue;
+.socialIcons.twitter {
+  color: mediumblue;
 }
 
-.socialIcons.linkedin{
-    color: rgb(54, 54, 236);
+.socialIcons.linkedin {
+  color: rgb(54, 54, 236);
 }
 
-.socialIcons.facebook{
-    color: rgb(54, 54, 236);
+.socialIcons.facebook {
+  color: rgb(54, 54, 236);
 }
 
-.socialIcons:hover{
-    color: var(--mr-highlight-color);
+.socialIcons:hover {
+  color: var(--mr-highlight-color);
 }
 /*-----Media Queries-----*/
 
