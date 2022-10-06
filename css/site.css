@@ -147,10 +147,28 @@ footer {
   padding-right: 1rem;
 }
 
+.section-page:nth-child(even) {
+    background-color: var(--mr-primary-color);
+  }
+
 .section-page:nth-child(odd) {
   background-color: var(--mr-light-color);
 }
+.section-cta{
+    background: var(--mr-dark-color);
+    color: var(--mr-light-color);
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
+.ctaIcon{
+    color: car(--mr-light-color);
+    font-size: 2.5rem;
+    padding-left: .5rem;
+}
 /*-----Media Queries-----*/
 
 /* -----X-Small devices (portrait phones, less than 576px)-----*/
