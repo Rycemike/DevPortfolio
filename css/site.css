@@ -249,6 +249,7 @@ footer {
 .socialIcons:hover {
   color: var(--mr-highlight-color);
 }
+
 /*-----Media Queries-----*/
 
 /* -----X-Small devices (portrait phones, less than 576px)-----*/
