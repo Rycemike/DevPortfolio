@@ -137,7 +137,7 @@ footer {
 }
 
 .devIcon {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .section-page {
@@ -148,26 +148,89 @@ footer {
 }
 
 .section-page:nth-child(even) {
-    background-color: var(--mr-primary-color);
-  }
+  background-color: var(--mr-primary-color);
+}
 
 .section-page:nth-child(odd) {
   background-color: var(--mr-light-color);
 }
-.section-cta{
-    background: var(--mr-dark-color);
-    color: var(--mr-light-color);
-    font-size: 1.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.section-page.dark {
+  background-color: var(--mr-primary-color) !important;
 }
 
-.ctaIcon{
-    color: car(--mr-light-color);
-    font-size: 2.5rem;
-    padding-left: .5rem;
+.section-page.light {
+  background-color: var(--mr-light-color) !important;
+}
+.section-cta {
+  background: var(--mr-dark-color);
+  color: var(--mr-light-color);
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.ctaIcon {
+  color: car(--mr-light-color);
+  font-size: 2.5rem;
+  padding-left: 0.5rem;
+}
+
+.footer-cta {
+  border-radius: 15px;
+  background-color: var(--mr-secondary-color);
+  width: 75%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-bg-cta {
+  background: linear-gradient(
+    to bottom,
+    var(--mr-background-color) 0,
+    var(--mr-background-color) 50%,
+    var(--mr-dark-color) 50%,
+    var(--mr-dark-color) 100%
+  );
+}
+
+.footer-main {
+  background-color: var(--mr-dark-color);
+  color: var(--mr-light-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.socialIcons{
+    font-size: 2rem;
+    color: var(--mr-secondary-color);
+}
+
+.socialIcons.youtube{
+    color: red;
+}
+
+.socialIcons.instagram{
+    background: #833ab4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.socialIcons.twitter{
+    color: mediumblue;
+}
+
+.socialIcons.linkedin{
+    color: rgb(54, 54, 236);
+}
+
+.socialIcons.facebook{
+    color: rgb(54, 54, 236);
+}
+
+.socialIcons:hover{
+    color: var(--mr-highlight-color);
 }
 /*-----Media Queries-----*/
 
